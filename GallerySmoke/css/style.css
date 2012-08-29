@@ -1,0 +1,15 @@
+#box_colecao{width: 100%;height: 510px;float: left;text-align: center;}
+#box_colecao{position: relative;overflow: hidden;width:100%;}
+.carrosel {position: relative;margin: 0;padding: 0;width:20000px;list-style:none;display: none}
+.carrosel li{float: left;position: relative;}
+.carrosel img{width:100%;height:100%;}
+
+.fotoAtual{}
+.carrosel span {background:url("../img/zoom.png") no-repeat center center;width: 100%;height: 100%;display: block;position: absolute;left: 0;top: 0;}
+
+.referencia{clear: both;text-align: center;padding-top: 10px;}
+
+#box_colecao .next,
+#box_colecao .prev{position: absolute;top:50%;margin-top: -65px;height: 73px;width: 73px;}
+#box_colecao .next{background-position:  0 -100px ;}
+#box_colecao .prev{background-position: -75px -100px;}
