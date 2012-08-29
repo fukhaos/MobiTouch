@@ -12,7 +12,7 @@ Mobitouch !!!
             width : "auto",
             height : "auto",
             center: true,
-            swipe: true,
+            swipe: false,
             hitEdge: false
         };
 
@@ -144,8 +144,6 @@ Mobitouch !!!
             $(".carrosel li").stop().animate({"opacity":.2}).removeClass("fotoAtual");
             $(".carrosel li").eq(fotoAtual).stop().animate({"opacity":1}).addClass("fotoAtual");
 
-            //Alinha Seta
-            //Não e da galeria
             var alinha_seta = (($doc.width()-$('.fotoAtual').width())/2);
             alinha_seta     = parseInt(alinha_seta);
 
@@ -155,11 +153,7 @@ Mobitouch !!!
             prev.stop().animate({left:seta_next,opacity:1});
             next.stop().animate({left:seta_prev,opacity:1});
 
-            //referencia
-            //Não e da galeria
             $(".referencia").empty().append("<span>Referência</span>: " + $('.carrosel img').eq(fotoAtual).attr("alt"));
-
-
           },
           buttonNext: function(e){
             console.log(fotoAtual)
